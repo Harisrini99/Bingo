@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THE BINGO"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In the concluding chapter we develop some overarching lessons, using our research from across the four case studies. In particular, we highlight the following key points. \n\n \t 1.The value of expanding the concept of responsible gambling’ to better reflect fairness for players and workers. \n\n \t 2.The need for context-specific consideration of whether non-commercial actors should be privileged as bingo operators by regulators, taking into account how such actors use proceeds, how they are connected to players as donors, and how they mobilise volunteers. \n\n \t 3.The need for rules that reflect the distinctiveness of bingo as a game, and a playing environment. \n\n \t 4.A potential role for gambling regulators in supporting and preserving everyday, vernacular forms of play like bingo. \n\n \t 5.The need to better support international collaborations across local governments that license low-level forms of gambling such as bingos. \n\n 6.The uneven effects of the female-dominated nature of bingo on its regulation."
+                    android:textAlignment="viewStart"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Player Name">
+
+                <EditText
+                    android:id="@+id/player_name_button"
+                    style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Player Name"
+                    android:inputType="textPersonName"
+                    android:text="Player" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Next"
+                android:text="Next" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matrix_back"
+    tools:context=".fragments.SinglePlayer">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/no_action_bar">
+
+        <ImageButton
+            android:id="@+id/back_button_toolbar"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="-10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/backbutton" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Select To Insert Numbers ↓"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/b1"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/maple_snow"
+                    android:text="B"
+                    android:textAlignment="center"
+                    android:textColor="@color/colgrad"
+                    android:textSize="50dp" />
+
+                <Button
+                    android:id="@+id/b2"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/maple_snow"
+                    android:text="I"
+                    android:textAlignment="center"
+                    android:textColor="@color/colgrad"
+                    android:textSize="50dp" />
+
+                <Button
+                    android:id="@+id/b3"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/maple_snow"
+                    android:text="N"
+                    android:textAlignment="center"
+                    android:textColor="@color/colgrad"
+                    android:textSize="50dp" />
+
+                <Button
+                    android:id="@+id/b4"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/maple_snow"
+                    android:text="G"
+                    android:textAlignment="center"
+                    android:textColor="@color/colgrad"
+                    android:textSize="50dp" />
+
+                <Button
+                    android:id="@+id/b5"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/maple_snow"
+                    android:text="O"
+                    android:textAlignment="center"
+                    android:textColor="@color/colgrad"
+                    android:textSize="50dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp">
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="0.33in"
+                    android:layout_height="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_back" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/b11"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b12"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b13"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b14"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b15"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/b21"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b22"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b23"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b24"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b25"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/b31"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b32"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b33"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b34"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b35"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/b41"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b42"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b43"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b44"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b45"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/b51"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b52"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b53"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b54"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/b55"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/back"
+                    android:fontFamily="@font/snap_snow"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/undo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round"
+                    android:drawableLeft="@android:drawable/ic_menu_revert"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:minWidth="100dp"
+                    android:text="Undo Number"
+                    android:textAllCaps="false"
+                    android:textColor="@color/temp"
+                    android:textSize="16dp" />
+
+                <Button
+                    android:id="@+id/random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round"
+                    android:drawableLeft="@android:drawable/ic_menu_rotate"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:minWidth="100dp"
+                    android:text="Random"
+                    android:textAllCaps="false"
+                    android:textColor="@color/temp"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/start_button_matrix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="3"
+                android:background="@drawable/round"
+                android:fontFamily="@font/maple_snow"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Start Game"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/temp"
+                android:textSize="32dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

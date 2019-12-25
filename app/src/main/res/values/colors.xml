@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3a4f71</color>
+    <color name="colorPrimaryDark">#3a4f71</color>
+    <color name="colorAccent">#3a4f71</color>
+    <color name="temp">#C4EDEDED</color>
+
+    <color name="colgrad">#A3C8C8C8</color>
+    <color name="matrix_back">#9AEDEDED</color>
+
+
+</resources>
